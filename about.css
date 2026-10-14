@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f3f7fb;
+  color: #243447;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.page {
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  padding: clamp(56px, 8vw, 104px) max(24px, calc((100% - 1120px) / 2));
+  background: #fff;
+}
+
+.section h1 {
+  margin: 0 0 42px;
+  text-align: center;
+  color: #142f4c;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.content {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 42px);
+  background: #f7faff;
+  border: 1px solid #e2eaf3;
+  border-radius: 18px;
+  box-shadow: 0 14px 36px rgba(20, 47, 76, 0.07);
+}
+
+.content h2 {
+  margin: 0;
+  color: #0202f5;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.content p {
+  margin: 8px 0 26px;
+  color: #4b5d70;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  text-align: left;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Experience section */
+.experience {
+  background: #f3f7fb;
+}
+
+.experience h1 {
+  margin-bottom: 42px;
+}
+
+.experience-list {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project {
+  margin: 0 0 18px;
+  padding: 24px 28px;
+  background: #fff;
+  border: 1px solid #e2eaf3;
+  border-left: 4px solid #0202f5;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 47, 76, 0.045);
+}
+
+.project:last-child {
+  margin-bottom: 0;
+}
+
+.project h3 {
+  margin: 0 0 8px;
+  color: #142f4c;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.project h3 span {
+  font-weight: 400;
+  color: #526579;
+}
+
+.project p {
+  margin: 0;
+  color: #4b5d70;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.project .standalone {
+  margin-top: 8px;
+}
+
+.project .final-line {
+  margin-top: 14px;
+  color: #142f4c;
+  font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .section {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  body {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 52px 20px;
+  }
+
+  .section h1 {
+    margin-bottom: 28px;
+  }
+
+  .content {
+    padding: 24px 20px;
+    border-radius: 14px;
+  }
+
+  .content h2 {
+    font-size: 1.1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 7px 0 22px;
+  }
+
+  .project {
+    margin-bottom: 14px;
+    padding: 20px;
+  }
+
+  .project h3 {
+    font-size: 1.05rem;
+  }
+
+  .project p {
+    font-size: 0.96rem;
+    line-height: 1.65;
+  }
+}

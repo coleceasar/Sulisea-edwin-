@@ -1,0 +1,20 @@
+.site-footer {
+    width: 100%;
+    padding: 22px 20px;
+    background: #0202F5;
+    color: #ffffff;
+    text-align: right;
+}
+
+.footer-content {
+    width: min(1220px, 100%);
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
